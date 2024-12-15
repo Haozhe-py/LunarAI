@@ -1,11 +1,11 @@
 from setuptools import setup , find_packages
 import LunarAI
-#https://blog.csdn.net/crown_0726/article/details/119192289
+
 setup(
     name='LunarAI' ,
     version=LunarAI.__version__,
-    description=('An Neural Network tool'),
-    long_description='An Neural Network tool',
+    description='A convenient AI tool',
+    long_description=open('README.md',mode='r',encoding='utf-8').read(),
     long_description_content_type = 'text/markdown',
     author='Haozhe Xu',
     author_email='2779630178@qq.com',
@@ -33,7 +33,7 @@ setup(
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
-        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Topic :: Software Development :: Libraries'
     ]
 )

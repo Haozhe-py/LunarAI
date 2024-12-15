@@ -5,6 +5,13 @@ def sigmoid(z): #d sigmoid/dz
     return a*(1-a)
 
 def relu(z):   #d relu/dz
-    if z>0:
-        return 1
-    return 0.01
+    r = z.get()
+    for i in range(len(z)):
+        for j in range(len(i)):
+            if z[i][j]>0:
+                r[i][j] = 1
+            else:
+                r[i][j] =  0.01
+            continue
+        continue
+    return r
